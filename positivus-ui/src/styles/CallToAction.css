@@ -1,0 +1,56 @@
+.cta-section {
+  padding: 80px 8%;
+}
+
+.cta-box {
+  background: #f4f4f3;
+  border-radius: 28px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* left content */
+.cta-left {
+  max-width: 520px;
+}
+
+.cta-left h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta-left p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-left button {
+  background: #12131a;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* right image */
+.cta-right img {
+  width: 320px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .cta-box {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .cta-right img {
+    width: 260px;
+  }
+}

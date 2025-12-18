@@ -1,0 +1,110 @@
+.process-section {
+  padding: 80px 60px;
+}
+
+/* Header */
+.process-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.process-badge {
+  background: #b9ff66;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.process-header p {
+  color: #555;
+}
+
+/* Accordion */
+.process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.process-item {
+  border: 2px solid #000;
+  border-radius: 28px;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.process-item.active {
+  background: #b9ff66;
+}
+
+/* Top row */
+.process-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.number {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.process-top h3 {
+  font-size: 20px;
+}
+
+/* Icon */
+.icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-weight: 600;
+  background: #fff;
+}
+
+/* Content */
+.process-content {
+  margin-top: 20px;
+}
+
+.process-content hr {
+  border: none;
+  border-top: 1px solid #000;
+  margin-bottom: 15px;
+}
+
+.process-content p {
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .process-section {
+    padding: 60px 20px;
+  }
+
+  .process-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .number {
+    font-size: 28px;
+  }
+}

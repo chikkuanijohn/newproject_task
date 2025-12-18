@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+
+/* Logo + star */
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.star {
+  width: 8px;
+  height: 8px;
+  background-color: #111;
+  transform: rotate(45deg);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Button */
+.nav-btn {
+  padding: 10px 18px;
+  border: 1px solid #111;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}

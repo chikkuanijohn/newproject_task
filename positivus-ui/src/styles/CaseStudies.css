@@ -1,0 +1,119 @@
+/* ===============================
+   CASE STUDIES SECTION
+================================ */
+.case-section {
+  padding: 80px 60px;
+  background: #fff;
+}
+
+/* ===============================
+   HEADER
+================================ */
+.case-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 60px; /* 👈 CTA section nte gap kurachu */
+}
+
+.case-badge {
+  background: #a3ff4b;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.case-header p {
+  max-width: 520px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ===============================
+   BIG DARK BOX
+================================ */
+.case-box {
+  background: linear-gradient(180deg, #1b1d27, #0f111a);
+  border-radius: 40px;
+  padding: 50px 55px;
+  display: flex;
+  align-items: stretch;
+  gap: 40px;
+}
+
+/* ===============================
+   EACH COLUMN
+================================ */
+.case-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* TEXT */
+.case-item p {
+  color: #cfcfcf;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+
+/* LINK */
+.case-item a {
+  color: #a3ff4b;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ===============================
+   DIVIDER (IMAGE POLE STYLE)
+================================ */
+.case-box .divider {
+  width: 3px;                         /* 👈 3px border */
+  height: 120px;                      /* 👈 short line */
+  background: rgba(255, 255, 255, 0.25);
+  align-self: center;                 /* 👈 center vertically */
+  border-radius: 2px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+  .case-section {
+    padding: 70px 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .case-box {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .case-box .divider {
+    width: 120px;
+    height: 3px;                     /* 👈 horizontal 3px */
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-section {
+    padding: 60px 20px;
+  }
+
+  .case-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+}
