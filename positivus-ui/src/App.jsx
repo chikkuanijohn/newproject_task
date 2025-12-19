@@ -5,7 +5,10 @@ import Services from "./components/Services";
 import CallToAction from "./components/CallToAction";
 import CaseStudies from "./components/CaseStudies";
 import WorkingProcess from "./components/WorkingProcess";
-import Team from "./components/Team"; // 👈 ADD
+import Team from "./components/Team";
+import Testimonials from "./components/Testimonials";
+import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,7 +20,10 @@ function App() {
       <CallToAction />
       <CaseStudies />
       <WorkingProcess />
-      <Team /> {/* 👈 Team Section */}
+      <Team />
+      <Testimonials />
+      <ContactUs />
+      <Footer />
     </>
   );
 }

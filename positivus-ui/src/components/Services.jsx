@@ -1,6 +1,6 @@
 import "../styles/Services.css";
 
-export default function Services() {
+function Services() {
   return (
     <section className="services">
       <div className="services-header">
@@ -12,54 +12,56 @@ export default function Services() {
       </div>
 
       <div className="services-grid">
-        <div className="card light">
-          <div>
-            <h3>Search engine optimization</h3>
-            <a href="#">Learn more</a>
-          </div>
-          <img src="https://master--kreatif-software.netlify.app/_astro/card-pic1.LmmlwL7__223Xo8.webp" />
-        </div>
+        <ServiceCard
+          title="Search engine optimization"
+          img="https://master--kreatif-software.netlify.app/_astro/card-pic1.LmmlwL7__223Xo8.webp"
+          variant="light"
+        />
 
-        <div className="card green">
-          <div>
-            <h3>Pay-per-click advertising</h3>
-            <a href="#">Learn more</a>
-          </div>
-          <img src="https://master--kreatif-software.netlify.app/_astro/card-pic2.BeQ4x_k2_Z1BwdVT.webp" />
-        </div>
+        <ServiceCard
+          title="Pay-per-click advertising"
+          img="https://master--kreatif-software.netlify.app/_astro/card-pic2.BeQ4x_k2_Z1BwdVT.webp"
+          variant="green"
+        />
 
-        <div className="card dark">
-          <div>
-            <h3>Social Media Marketing</h3>
-            <a href="#">Learn more</a>
-          </div>
-          <img src="https://master--kreatif-software.netlify.app/_astro/card-pic3.D4d3JTsx_Z24EeW2.webp" />
-        </div>
+        <ServiceCard
+          title="Social Media Marketing"
+          img="https://master--kreatif-software.netlify.app/_astro/card-pic3.D4d3JTsx_Z24EeW2.webp"
+          variant="dark"
+        />
 
-        <div className="card light">
-          <div>
-            <h3>Email Marketing</h3>
-            <a href="#">Learn more</a>
-          </div>
-          <img src="https://master--kreatif-software.netlify.app/_astro/card-pic4.CPZGvqT8_Z1yOHDC.webp" />
-        </div>
+        <ServiceCard
+          title="Email Marketing"
+          img="https://master--kreatif-software.netlify.app/_astro/card-pic4.CPZGvqT8_Z1yOHDC.webp"
+          variant="light"
+        />
 
-        <div className="card green">
-          <div>
-            <h3>Content Creation</h3>
-            <a href="#">Learn more</a>
-          </div>
-          <img src="https://master--kreatif-software.netlify.app/_astro/card-pic5.CqK5dBMJ_19aYSm.webp" />
-        </div>
+        <ServiceCard
+          title="Content Creation"
+          img="https://master--kreatif-software.netlify.app/_astro/card-pic5.CqK5dBMJ_19aYSm.webp"
+          variant="green"
+        />
 
-        <div className="card dark">
-          <div>
-            <h3>Analytics and Tracking</h3>
-            <a href="#">Learn more</a>
-          </div>
-          <img src="https://master--kreatif-software.netlify.app/_astro/card-pic6.CXJkFMY0_20JiD4.webp" />
-        </div>
+        <ServiceCard
+          title="Analytics and Tracking"
+          img="https://master--kreatif-software.netlify.app/_astro/card-pic6.CXJkFMY0_20JiD4.webp"
+          variant="dark"
+        />
       </div>
     </section>
   );
 }
+
+function ServiceCard({ title, img, variant }) {
+  return (
+    <div className={`service-card ${variant}`}>
+      <div className="service-content">
+        <h3>{title}</h3>
+        <a href="#">↗ Learn more</a>
+      </div>
+      <img src={img} alt={title} />
+    </div>
+  );
+}
+
+export default Services;
